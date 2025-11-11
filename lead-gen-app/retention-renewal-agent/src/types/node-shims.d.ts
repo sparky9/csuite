@@ -1,0 +1,12 @@
+declare module 'path';
+declare module 'url';
+declare module 'fs/promises';
+declare module 'pg';
+declare module 'dotenv';
+declare const process: any;
+declare module 'zod';
+declare module 'winston';
+declare module '@modelcontextprotocol/sdk/types.js';
+declare module '@modelcontextprotocol/sdk/server/index.js';
+declare module '@modelcontextprotocol/sdk/server/stdio.js';
+declare module 'dotenv/config';

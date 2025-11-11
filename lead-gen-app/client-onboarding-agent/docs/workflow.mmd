@@ -1,0 +1,17 @@
+%% Client onboarding plan workflow
+flowchart LR
+  Template["Template authoring\n(onboarding_template_save)"] --> |Creates| Library["Template library"]
+  Library -->|List + Search| TemplateList["onboarding_template_list"]
+  TemplateList -->|Select templateId| PlanGenerate["onboarding_plan_generate"]
+  PlanGenerate -->|Creates| Plan[(onboarding_plans)]
+  Plan --> Status["onboarding_plan_status"]
+  Plan --> Intake["onboarding_intake_summary"]
+  Plan --> Kickoff["onboarding_kickoff_schedule"]
+  Plan --> Welcome["onboarding_welcome_sequence"]
+  Plan --> Digest["onboarding_progress_digest"]
+  Plan --> Sync["onboarding_sync_update"]
+  Sync --> Downstream["CRM / Project board / Help desk"]
+  Digest --> Stakeholders["CS / Client updates"]
+  Intake --> ClientComms["Client reminders"]
+  Kickoff --> Scheduler["Kickoff outreach"]
+  Welcome --> Touchpoints["Communication cadence"]

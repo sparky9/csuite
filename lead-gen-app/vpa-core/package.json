@@ -1,0 +1,68 @@
+{
+  "name": "@yourcompany/vpa-core",
+  "version": "1.0.0",
+  "description": "VPA (Virtual Personal Assistant) - MCP orchestrator for unified business automation",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "vpa-init": "./dist/scripts/vpa-init.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "postinstall": "playwright install chromium --with-deps || echo 'Playwright install failed, research capture will use fetch fallback'",
+    "db:setup": "tsx scripts/setup-database.ts",
+    "db:migrate": "tsx scripts/migrate-existing-tables.ts",
+    "db:create-user": "tsx scripts/create-user.ts",
+    "admin": "tsx scripts/admin/index.ts",
+    "admin:create-user": "tsx scripts/admin/create-user.ts",
+    "admin:grant-modules": "tsx scripts/admin/grant-modules.ts",
+    "admin:view-usage": "tsx scripts/admin/view-usage.ts",
+    "admin:manage-subs": "tsx scripts/admin/manage-subscriptions.ts",
+    "admin:list-users": "tsx scripts/admin/list-users.ts",
+    "admin:health": "tsx scripts/admin/health-check.ts",
+    "bridge:dev": "tsx src/bridge/server.ts",
+    "configure:adapters": "tsx scripts/configure-adapters.ts",
+    "test:adapters": "tsx scripts/test-adapters.ts",
+    "test:adapters:all": "tsx scripts/test-all-adapters.ts",
+    "telemetry:stream": "tsx scripts/telemetry-stream.ts",
+    "stripe:setup": "tsx scripts/stripe/setup-products.ts",
+    "stripe:checkout": "tsx scripts/stripe/create-checkout-link.ts",
+    "webhook:server": "tsx src/billing/webhook-server.ts",
+    "test": "node --import tsx --test \"tests/**/*.test.ts\""
+  },
+  "keywords": [
+    "mcp",
+    "vpa",
+    "business-automation",
+    "ai-orchestration",
+    "crm",
+    "lead-generation",
+    "email-automation"
+  ],
+  "author": "Mike & Forge",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.1",
+    "@anthropic-ai/sdk": "^0.32.1",
+    "pg": "^8.16.3",
+    "dotenv": "^17.2.3",
+    "winston": "^3.18.3",
+    "zod": "^3.25.76",
+    "stripe": "^14.0.0",
+    "express": "^4.18.2",
+    "playwright": "^1.48.0",
+    "research-insights": "file:../research-insights"
+  },
+  "devDependencies": {
+    "@types/node": "^24.8.1",
+    "@types/pg": "^8.15.5",
+    "@types/express": "^4.17.21",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "proposal-contract-agent",
+  "version": "0.1.0",
+  "description": "MCP server for proposal generation, contract workflows, and e-sign follow-ups",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "db:setup": "tsx scripts/setup-database.ts",
+    "db:cleanup": "tsx scripts/cleanup-smoke-data.ts",
+    "test:smoke": "tsx scripts/test-proposal-tools.ts",
+    "test:esign": "tsx scripts/test-esignature.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.1",
+    "@signpdf/placeholder-pdf-lib": "^3.2.6",
+    "@signpdf/signer-p12": "^3.2.4",
+    "@signpdf/signpdf": "^3.2.5",
+    "@types/markdown-it": "^14.1.2",
+    "@types/pdfkit": "^0.17.3",
+    "dotenv": "^17.2.3",
+    "markdown-it": "^14.1.0",
+    "node-forge": "^1.3.1",
+    "pdf-lib": "^1.17.1",
+    "pdfkit": "^0.17.2",
+    "pg": "^8.16.3",
+    "winston": "^3.18.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/pg": "^8.15.5",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

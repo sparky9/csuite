@@ -1,0 +1,2 @@
+{"timestamp":"2025-10-22T03:35:37.560Z","ticketId":"smoke-ticket-001","outcome":"escalate","summary":"Escalated automatically due to insufficient knowledge coverage.","topScore":0.2685664390006133,"totalResults":4,"autoEscalated":true,"escalationReason":"Knowledge base returned no high-confidence matches. Needs human review."}
+{"timestamp":"2025-10-22T03:39:52.171Z","ticketId":"smoke-ticket-001","outcome":"respond","summary":"Drafted mock response using RAG snippet (mock mode enabled).","topScore":0.2685664390006133,"totalResults":4,"autoEscalated":false}

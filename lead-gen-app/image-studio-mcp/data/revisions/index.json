@@ -1,0 +1,218 @@
+[
+  {
+    "id": "bd1e19d0-5b3d-4f3b-8546-4ec4391f7a23",
+    "timestamp": "2025-10-27T18:09:48.230Z",
+    "operation": "stage_image",
+    "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\sample-output.png",
+    "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\sample-input.png",
+    "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\sample-comparison.png",
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\sample-output-512.webp"
+    ],
+    "metadata": {
+      "seeded": true,
+      "note": "Revision seeded locally for CLI validation",
+      "batchId": "seed-batch",
+      "timestamp": "2025-10-27T18:09:48.227Z"
+    }
+  },
+  {
+    "id": "c7ba5512-1dc7-4da4-b7be-3a00cc42ea2f",
+    "timestamp": "2025-10-27T18:36:39.360Z",
+    "operation": "stage_image",
+    "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-staged.jpg",
+    "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 2.jpg",
+    "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-staged_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-staged_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-staged_1024.webp"
+    ],
+    "metadata": {
+      "createComparison": true,
+      "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+      "webAssets": true,
+      "webVariants": [
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-staged_512.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-staged_768.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-staged_1024.webp"
+      ]
+    }
+  },
+  {
+    "id": "33450da3-19a2-48c3-875d-be345998b6d6",
+    "timestamp": "2025-10-27T19:05:37.234Z",
+    "operation": "stage_image",
+    "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream.jpg",
+    "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 2.jpg",
+    "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_1024.webp"
+    ],
+    "metadata": {
+      "createComparison": true,
+      "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+      "webAssets": true,
+      "webVariants": [
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_512.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_768.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_1024.webp"
+      ]
+    }
+  },
+  {
+    "id": "c95d33ac-83fb-4edf-be59-bd6e9ffdb638",
+    "timestamp": "2025-10-27T19:13:51.947Z",
+    "operation": "stage_image",
+    "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream.jpg",
+    "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 2.jpg",
+    "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_1024.webp"
+    ],
+    "metadata": {
+      "createComparison": true,
+      "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+      "webAssets": true,
+      "webVariants": [
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_512.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_768.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_1024.webp"
+      ]
+    }
+  },
+  {
+    "id": "c3fb9dcb-cbd0-45de-aeb8-fab5815118b7",
+    "timestamp": "2025-10-27T23:38:14.926Z",
+    "operation": "stage_image",
+    "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury.jpg",
+    "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 2.jpg",
+    "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_1024.webp"
+    ],
+    "metadata": {
+      "createComparison": true,
+      "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+      "webAssets": true,
+      "webVariants": [
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_512.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_768.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_1024.webp"
+      ]
+    }
+  },
+  {
+    "id": "cf8aae37-2483-435a-aeef-31313ad4b58d",
+    "timestamp": "2025-10-27T23:38:25.184Z",
+    "operation": "stage_image",
+    "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury.jpg",
+    "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 3.jpg",
+    "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 3.jpg",
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_1024.webp"
+    ],
+    "metadata": {
+      "createComparison": true,
+      "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 3.jpg",
+      "webAssets": true,
+      "webVariants": [
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_512.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_768.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_1024.webp"
+      ]
+    }
+  },
+  {
+    "id": "17a75932-c8f6-4081-be3d-33101a37d85e",
+    "timestamp": "2025-10-27T23:52:35.384Z",
+    "operation": "transform_image",
+    "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved.jpg",
+    "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 2.jpg",
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved_1024.webp"
+    ],
+    "metadata": {
+      "strength": 0.55,
+      "webAssets": true,
+      "webVariants": [
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved_512.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved_768.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved_1024.webp"
+      ]
+    }
+  },
+  {
+    "id": "9395b0f3-1131-4b86-97ea-6f481df31d2e",
+    "timestamp": "2025-10-27T23:52:52.963Z",
+    "operation": "transform_image",
+    "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved.jpg",
+    "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 3.jpg",
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_1024.webp"
+    ],
+    "metadata": {
+      "strength": 0.55,
+      "webAssets": true,
+      "webVariants": [
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_512.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_768.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_1024.webp"
+      ]
+    }
+  },
+  {
+    "id": "e5356cca-08e0-4906-b179-8796a85fb50c",
+    "timestamp": "2025-10-27T23:54:01.655Z",
+    "operation": "transform_image",
+    "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved-v2.jpg",
+    "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 2.jpg",
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved-v2_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved-v2_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved-v2_1024.webp"
+    ],
+    "metadata": {
+      "strength": 0.35,
+      "webAssets": true,
+      "webVariants": [
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved-v2_512.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved-v2_768.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-preserved-v2_1024.webp"
+      ]
+    }
+  },
+  {
+    "id": "cf407aa5-7a27-43ba-8c61-56188dc0a786",
+    "timestamp": "2025-10-27T23:54:11.907Z",
+    "operation": "transform_image",
+    "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2.jpg",
+    "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 3.jpg",
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_1024.webp"
+    ],
+    "metadata": {
+      "strength": 0.35,
+      "webAssets": true,
+      "webVariants": [
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_512.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_768.webp",
+        "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_1024.webp"
+      ]
+    }
+  }
+]

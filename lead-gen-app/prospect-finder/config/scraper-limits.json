@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Rate limiting configuration for web scrapers - prevents IP bans and respects site policies",
+  "yellow_pages": {
+    "requests_per_minute": 8,
+    "requests_per_hour": 150,
+    "requests_per_day": 500,
+    "concurrent_browsers": 2,
+    "cooldown_on_limit_ms": 45000,
+    "notes": "PRIMARY data source - Yellow Pages is less aggressive than Google Maps, cleaner data structure for B2B prospecting."
+  },
+  "google_maps": {
+    "requests_per_minute": 10,
+    "requests_per_hour": 200,
+    "requests_per_day": 2000,
+    "concurrent_browsers": 2,
+    "cooldown_on_limit_ms": 60000,
+    "notes": "FALLBACK source - Conservative limits - Google Maps is strict. Increase gradually if using quality proxies."
+  },
+  "linkedin_company": {
+    "requests_per_minute": 5,
+    "requests_per_hour": 100,
+    "requests_per_day": 500,
+    "concurrent_browsers": 1,
+    "cooldown_on_limit_ms": 120000,
+    "notes": "LinkedIn is very aggressive with rate limiting. Use residential proxies and authentic sessions."
+  },
+  "linkedin_people": {
+    "requests_per_minute": 3,
+    "requests_per_hour": 60,
+    "requests_per_day": 300,
+    "concurrent_browsers": 1,
+    "cooldown_on_limit_ms": 180000,
+    "notes": "Most restrictive - people searches trigger stronger anti-bot measures."
+  },
+  "email_finder": {
+    "requests_per_minute": 15,
+    "requests_per_hour": 300,
+    "requests_per_day": 3000,
+    "concurrent_browsers": 2,
+    "cooldown_on_limit_ms": 30000,
+    "notes": "Less restrictive - most sites don't heavily rate limit email finder patterns."
+  },
+  "global": {
+    "max_retries": 3,
+    "retry_delay_ms": 5000,
+    "timeout_ms": 30000,
+    "browser_reuse_count": 50,
+    "notes": "Global settings applied to all scrapers unless overridden"
+  },
+  "adjustment_guidelines": {
+    "production": "Start conservative, monitor for blocks, increase by 25% if no issues after 7 days",
+    "development": "Use lower limits during testing to avoid wasting proxies and triggering blocks",
+    "premium_proxies": "With residential proxies, you can increase all limits by 2-3x safely",
+    "datacenter_proxies": "Keep limits conservative - datacenter IPs are easily detected and blocked"
+  }
+}

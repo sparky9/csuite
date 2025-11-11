@@ -1,0 +1,22 @@
+{
+  "id": "bd1e19d0-5b3d-4f3b-8546-4ec4391f7a23",
+  "timestamp": "2025-10-27T18:09:48.230Z",
+  "operation": "stage_image",
+  "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\sample-output.png",
+  "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\sample-input.png",
+  "prompt": "staging seed run",
+  "style": "ikea_modern",
+  "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\sample-comparison.png",
+  "webVariants": [
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\sample-output-512.webp"
+  ],
+  "replicateUrl": "https://replicate.com/mock/run",
+  "cost": 0,
+  "processingTime": 0,
+  "metadata": {
+    "seeded": true,
+    "note": "Revision seeded locally for CLI validation",
+    "batchId": "seed-batch",
+    "timestamp": "2025-10-27T18:09:48.227Z"
+  }
+}

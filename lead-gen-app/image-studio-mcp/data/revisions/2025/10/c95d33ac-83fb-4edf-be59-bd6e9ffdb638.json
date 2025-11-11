@@ -1,0 +1,27 @@
+{
+  "id": "c95d33ac-83fb-4edf-be59-bd6e9ffdb638",
+  "timestamp": "2025-10-27T19:13:51.947Z",
+  "operation": "stage_image",
+  "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream.jpg",
+  "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 2.jpg",
+  "style": "ikea_modern",
+  "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+  "webVariants": [
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_512.webp",
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_768.webp",
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_1024.webp"
+  ],
+  "replicateUrl": "https://replicate.delivery/xezq/xVlewPGeoPubAEZREkAt0m9i6V0VPfMYPLJaEz18qtodzuGrA/tmp0nhnq5_s.jpg",
+  "cost": 0.0063,
+  "processingTime": 9.784,
+  "metadata": {
+    "createComparison": true,
+    "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+    "webAssets": true,
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-seedream_1024.webp"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "cf8aae37-2483-435a-aeef-31313ad4b58d",
+  "timestamp": "2025-10-27T23:38:25.184Z",
+  "operation": "stage_image",
+  "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury.jpg",
+  "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 3.jpg",
+  "style": "luxury modern living room, warm champagne gold painted walls, high-end contemporary furniture in rich textures, sophisticated young professional couple aesthetic, upscale West Elm and Article style furniture, plush velvet sofa in deep jewel tones, elegant brass and gold metal accents, modern abstract art on walls, designer lighting fixtures, tasteful decorative objects, cozy yet refined ambiance, natural light, professional staging, high-end interior design photography, luxurious but not gaudy, warm inviting atmosphere, focus on window area with elegant window treatments, sophisticated curtains or roman shades, cozy seating near window, reading nook aesthetic, maintain consistent champagne gold walls and upscale furniture style",
+  "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 3.jpg",
+  "webVariants": [
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_512.webp",
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_768.webp",
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_1024.webp"
+  ],
+  "replicateUrl": "https://replicate.delivery/xezq/QZgK77knVcJ2Pdf2Zt06qH8lrpYgFHcXbmZ2ufPFrfeeNabsC/tmpwao8ff2s.jpg",
+  "cost": 0.0063,
+  "processingTime": 9.524,
+  "metadata": {
+    "createComparison": true,
+    "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 3.jpg",
+    "webAssets": true,
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-luxury_1024.webp"
+    ]
+  }
+}

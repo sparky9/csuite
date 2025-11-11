@@ -1,0 +1,18 @@
+%% Client Onboarding Agent architecture
+flowchart TD
+  subgraph MCPServer
+    Entry["MCP stdio server\n(src/index.ts)"]
+    Tools["Tool handlers\n(src/tools/*)"]
+    Services["Service layer\n(src/services/*)"]
+  end
+
+  Client["Claude Desktop\nSupport Agent"] -->|MCP requests| Entry
+  Entry --> Tools
+  Tools -->|Zod-validated inputs| Services
+  Services -->|SQL queries| DB[(PostgreSQL)]
+  Services -->|Automation events| Events[(automation_events table)]
+  Services -->|Structured logs| Logger["Winston logger"]
+  Logger --> Observability["Support/CS visibility"]
+  Events --> Observability
+
+  Services -->|Plan payloads| Integrations["CRM / Project tools"]

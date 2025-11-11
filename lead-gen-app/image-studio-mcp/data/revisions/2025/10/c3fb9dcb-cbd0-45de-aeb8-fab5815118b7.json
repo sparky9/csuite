@@ -1,0 +1,27 @@
+{
+  "id": "c3fb9dcb-cbd0-45de-aeb8-fab5815118b7",
+  "timestamp": "2025-10-27T23:38:14.926Z",
+  "operation": "stage_image",
+  "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury.jpg",
+  "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 2.jpg",
+  "style": "luxury modern living room, warm champagne gold painted walls, high-end contemporary furniture in rich textures, sophisticated young professional couple aesthetic, upscale West Elm and Article style furniture, plush velvet sofa in deep jewel tones, elegant brass and gold metal accents, modern abstract art on walls, designer lighting fixtures, tasteful decorative objects, cozy yet refined ambiance, natural light, professional staging, high-end interior design photography, luxurious but not gaudy, warm inviting atmosphere",
+  "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+  "webVariants": [
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_512.webp",
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_768.webp",
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_1024.webp"
+  ],
+  "replicateUrl": "https://replicate.delivery/xezq/XHTHVDDzKeXMLCez9yQXxeAn6Mwn6Klwe62fNx34fE5XZ02YF/tmpwe70l099.jpg",
+  "cost": 0.0063,
+  "processingTime": 9.942,
+  "metadata": {
+    "createComparison": true,
+    "comparisonPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\comparison_clegg - 2.jpg",
+    "webAssets": true,
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-2-luxury_1024.webp"
+    ]
+  }
+}

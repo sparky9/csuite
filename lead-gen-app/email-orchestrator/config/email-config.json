@@ -1,0 +1,36 @@
+{
+  "gmail": {
+    "daily_limit": 500,
+    "hourly_limit": 50,
+    "batch_size": 10
+  },
+  "smtp": {
+    "daily_limit": 1000,
+    "hourly_limit": 200
+  },
+  "scheduling": {
+    "check_interval_minutes": 5,
+    "default_timezone": "America/Chicago",
+    "default_send_days": [1, 2, 3, 4, 5],
+    "default_send_hours_start": 9,
+    "default_send_hours_end": 17
+  },
+  "tracking": {
+    "enabled_by_default": true,
+    "tracking_domain": "",
+    "pixel_enabled": true,
+    "click_tracking_enabled": true
+  },
+  "compliance": {
+    "company_name": "",
+    "company_address": "",
+    "company_phone": "",
+    "unsubscribe_enabled": true,
+    "require_physical_address": true
+  },
+  "ai": {
+    "model": "claude-sonnet-4-5-20250929",
+    "max_tokens": 2000,
+    "temperature": 0.7
+  }
+}

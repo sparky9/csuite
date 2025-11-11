@@ -1,0 +1,25 @@
+{
+  "id": "cf407aa5-7a27-43ba-8c61-56188dc0a786",
+  "timestamp": "2025-10-27T23:54:11.907Z",
+  "operation": "transform_image",
+  "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2.jpg",
+  "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 3.jpg",
+  "prompt": "Interior design: Add minimal elegant modern furniture (sofa, coffee table, side chair). Paint walls soft champagne gold (#C4B896). CRITICAL PRESERVATION REQUIREMENTS: Keep exact same camera angle and perspective. Keep exact same window positions, size, style, and frames - do not change windows at all. Keep exact same hardwood floor pattern. Keep exact same wall positions and room shape. Keep exact same ceiling and light fixtures. Keep exact same architectural details. Only add furniture and change wall paint - nothing else.",
+  "webVariants": [
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_512.webp",
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_768.webp",
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_1024.webp"
+  ],
+  "replicateUrl": "https://replicate.delivery/xezq/yUwkwMOOwFYiG1kkZQT51avEfLPSRH7ebiL6FUa2RtHhgbjVA/out-0.png",
+  "cost": 0.0071,
+  "processingTime": 9.271,
+  "metadata": {
+    "strength": 0.35,
+    "webAssets": true,
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved-v2_1024.webp"
+    ]
+  }
+}

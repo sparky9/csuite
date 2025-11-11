@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Proxy configuration - copy to proxies.json and add your proxy credentials",
+  "provider": "your-proxy-provider",
+  "rotation_strategy": "round_robin",
+  "health_check_interval_minutes": 30,
+  "max_failures_before_disable": 3,
+  "proxies": [
+    {
+      "host": "proxy1.example.com",
+      "port": 8080,
+      "username": "your-username",
+      "password": "your-password",
+      "protocol": "http",
+      "country": "US",
+      "last_used": null,
+      "failure_count": 0,
+      "enabled": true
+    },
+    {
+      "host": "proxy2.example.com",
+      "port": 8080,
+      "username": "your-username",
+      "password": "your-password",
+      "protocol": "http",
+      "country": "US",
+      "last_used": null,
+      "failure_count": 0,
+      "enabled": true
+    }
+  ],
+  "notes": {
+    "rotation_strategies": {
+      "round_robin": "Use proxies in order, cycling through the list",
+      "random": "Pick a random proxy each time",
+      "least_used": "Use the proxy that has been used least recently"
+    },
+    "recommended_providers": {
+      "budget": [
+        "Webshare.io - $2.99/GB residential, good for testing",
+        "Proxy-Cheap - $3/GB residential, decent quality",
+        "Smartproxy - $8.5/GB residential, better reliability"
+      ],
+      "premium": [
+        "Bright Data (formerly Luminati) - Most reliable, higher cost",
+        "Oxylabs - Enterprise-grade, excellent for LinkedIn",
+        "NetNut - Fast residential IPs, good for Google Maps"
+      ],
+      "datacenter": [
+        "Cheaper but easily detected - only use for low-security targets",
+        "Not recommended for LinkedIn or Google Maps"
+      ]
+    },
+    "setup_instructions": {
+      "step_1": "Sign up with a proxy provider",
+      "step_2": "Copy this file to 'proxies.json' in the same directory",
+      "step_3": "Replace example credentials with your actual proxy details",
+      "step_4": "Set PROXY_CONFIG_PATH in .env (default: ./config/proxies.json)",
+      "step_5": "Test proxies before running scrapers at scale"
+    },
+    "proxy_types": {
+      "residential": "Real home IPs - hardest to detect, best for LinkedIn and Google",
+      "datacenter": "Server IPs - cheap but easily blocked, not recommended",
+      "mobile": "Cellular IPs - premium option, very hard to detect",
+      "rotating": "Provider automatically rotates IPs - easiest but less control"
+    },
+    "free_options": {
+      "development": "For testing only, use free proxies from free-proxy-list.net",
+      "warning": "Free proxies are unreliable, slow, and often already banned",
+      "recommendation": "Invest $10-20 in proxies to avoid wasted development time"
+    },
+    "optional_rotating_proxy": {
+      "description": "If your provider offers rotating proxies, use a single entry",
+      "example": {
+        "host": "gate.smartproxy.com",
+        "port": 7000,
+        "username": "your-username",
+        "password": "your-password",
+        "protocol": "http",
+        "country": "US",
+        "last_used": null,
+        "failure_count": 0,
+        "enabled": true
+      },
+      "note": "With rotating proxies, set proxies array to just this one entry"
+    }
+  }
+}

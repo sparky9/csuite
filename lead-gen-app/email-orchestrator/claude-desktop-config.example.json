@@ -1,0 +1,37 @@
+{
+  "mcpServers": {
+    "prospect-finder": {
+      "command": "node",
+      "args": [
+        "d:\\projects\\Lead gen app\\prospect-finder\\dist\\index.js"
+      ],
+      "env": {
+        "DATABASE_URL": "postgresql://user:password@host.neon.tech/prospect_finder?sslmode=require"
+      }
+    },
+    "leadtracker-pro": {
+      "command": "node",
+      "args": [
+        "d:\\projects\\Lead gen app\\leadtracker-pro\\dist\\index.js"
+      ],
+      "env": {
+        "DATABASE_URL": "postgresql://user:password@host.neon.tech/prospect_finder?sslmode=require"
+      }
+    },
+    "email-orchestrator": {
+      "command": "node",
+      "args": [
+        "d:\\projects\\Lead gen app\\email-orchestrator\\dist\\index.js"
+      ],
+      "env": {
+        "DATABASE_URL": "postgresql://user:password@host.neon.tech/prospect_finder?sslmode=require",
+        "ANTHROPIC_API_KEY": "sk-ant-your-key-here",
+        "GMAIL_CLIENT_ID": "your-client-id.apps.googleusercontent.com",
+        "GMAIL_CLIENT_SECRET": "your-client-secret",
+        "COMPANY_NAME": "Your Company Name",
+        "COMPANY_ADDRESS": "123 Main St, City, ST 12345",
+        "LOG_LEVEL": "info"
+      }
+    }
+  }
+}

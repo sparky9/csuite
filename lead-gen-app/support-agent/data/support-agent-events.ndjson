@@ -1,0 +1,2 @@
+{"timestamp":"2025-10-24T17:32:50.126Z","ticketId":"smoke-ticket-001","outcome":"escalate","summary":"Escalated in mock mode because no knowledge snippets were found.","topScore":0,"totalResults":0,"autoEscalated":true,"escalationReason":"Knowledge base returned zero matches."}
+{"timestamp":"2025-10-24T17:32:52.920Z","ticketId":"smoke-ticket-001","outcome":"escalate","summary":"Escalated in mock mode because no knowledge snippets were found.","topScore":0,"totalResults":0,"autoEscalated":true,"escalationReason":"Knowledge base returned zero matches."}

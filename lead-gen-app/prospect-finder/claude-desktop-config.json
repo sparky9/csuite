@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "prospect-finder": {
+      "command": "node",
+      "args": [
+        "D:\\projects\\Lead gen app\\dist\\index.js"
+      ],
+      "env": {
+        "DATABASE_URL": "postgresql://neondb_owner:npg_qVRb8xIze3Jn@ep-rough-paper-ad1jn7ix-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require"
+      }
+    },
+    "leadtracker-pro": {
+      "command": "node",
+      "args": [
+        "D:\\projects\\Lead gen app\\leadtracker-pro\\dist\\index.js"
+      ],
+      "env": {
+        "DATABASE_URL": "postgresql://neondb_owner:npg_qVRb8xIze3Jn@ep-rough-paper-ad1jn7ix-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require"
+      }
+    },
+    "email-orchestrator": {
+      "command": "node",
+      "args": [
+        "D:\\projects\\Lead gen app\\email-orchestrator\\dist\\index.js"
+      ],
+      "env": {
+        "DATABASE_URL": "postgresql://neondb_owner:npg_qVRb8xIze3Jn@ep-rough-paper-ad1jn7ix-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require"
+      }
+    }
+  }
+}

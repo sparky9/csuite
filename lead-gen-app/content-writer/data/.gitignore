@@ -1,0 +1,8 @@
+# Ignore all files in data directory (user-specific content)
+*.json
+
+# Keep this .gitignore file
+!.gitignore
+
+# Keep any README files
+!README.md

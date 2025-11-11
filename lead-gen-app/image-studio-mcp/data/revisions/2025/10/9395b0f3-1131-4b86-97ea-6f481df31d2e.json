@@ -1,0 +1,25 @@
+{
+  "id": "9395b0f3-1131-4b86-97ea-6f481df31d2e",
+  "timestamp": "2025-10-27T23:52:52.963Z",
+  "operation": "transform_image",
+  "outputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved.jpg",
+  "inputPath": "D:\\projects\\Lead gen app\\image-studio-mcp\\images\\clegg - 3.jpg",
+  "prompt": "Add elegant high-end modern furniture suitable for a young professional couple living room. Paint the walls warm champagne gold color (#C4B896 hex, muted beige-gold tone). CRITICAL: Preserve the exact existing room structure - keep the same windows (style, size, position), same hardwood flooring, same ceiling with chandelier, same wall positions, same room dimensions, and same camera perspective. Only add furniture and change wall paint color. Do not alter, modify, or change the windows, room layout, flooring pattern, or viewing angle in any way.",
+  "webVariants": [
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_512.webp",
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_768.webp",
+    "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_1024.webp"
+  ],
+  "replicateUrl": "https://replicate.delivery/xezq/OLKmbWRcWpoiPZoLNXeAM5WdZ5eeDRmGtt3zekXgGOGJ9tNWB/out-0.png",
+  "cost": 0.0071,
+  "processingTime": 15.976,
+  "metadata": {
+    "strength": 0.55,
+    "webAssets": true,
+    "webVariants": [
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_512.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_768.webp",
+      "D:\\projects\\Lead gen app\\image-studio-mcp\\data\\staged\\clegg-3-preserved_1024.webp"
+    ]
+  }
+}

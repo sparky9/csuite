@@ -1,0 +1,3 @@
+input,output,style,comparison,web_assets,prompt_strength,resolution,num_samples,negative_prompt,seed
+images/living-room.jpg,output/living-room-staged.jpg,ikea_modern,true,,0.85,1024,1,,
+images/den.jpg,,minimalist_contemporary,false,true,0.75,768,1,remove clutter,12345

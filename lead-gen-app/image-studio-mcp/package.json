@@ -1,0 +1,43 @@
+{
+  "name": "@solopreneur-suite/image-studio-mcp",
+  "version": "1.0.0",
+  "description": "MCP server and CLI for text-to-image generation, photo staging, and image transformations",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "image-studio": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "cli": "tsx src/cli.ts"
+  },
+  "keywords": [
+  "mcp",
+  "image-generation",
+  "virtual-staging",
+  "image-editing",
+  "replicate",
+  "ai"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+  "commander": "^11.1.0",
+  "csv-parse": "^5.5.2",
+    "dotenv": "^16.3.1",
+    "replicate": "^0.25.0",
+    "sharp": "^0.33.0",
+    "better-sqlite3": "^9.4.3",
+    "pg": "^8.16.3",
+    "winston": "^3.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/better-sqlite3": "^7.6.9",
+    "@types/pg": "^8.15.5",
+    "@types/winston": "^2.4.4",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
