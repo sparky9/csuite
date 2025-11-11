@@ -1,0 +1,93 @@
+name: Deploy to Staging
+
+on:
+  push:
+    branches: [develop]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to Staging
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: https://staging.ocsuite.app
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: echo "PNPM_STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.PNPM_STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build all packages
+        run: pnpm build
+        env:
+          NODE_ENV: production
+
+      - name: Run database migrations
+        env:
+          DATABASE_URL: ${{ secrets.STAGING_DATABASE_URL }}
+        run: pnpm --filter @ocsuite/db migrate
+
+      # TODO: Add deployment commands based on hosting platform
+      # Options:
+      # - Vercel: vercel deploy --prod
+      # - Railway: railway up
+      # - Fly.io: fly deploy
+      # - Docker: docker build & push, then deploy to k8s/ECS
+      # - Custom VPS: rsync or scp files, restart services
+
+      - name: Deploy API
+        run: |
+          echo "TODO: Add API deployment commands"
+          echo "Example: railway up --service api"
+          echo "Example: fly deploy --config apps/api/fly.toml"
+        # env:
+        #   RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        #   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
+      - name: Deploy Web
+        run: |
+          echo "TODO: Add Web deployment commands"
+          echo "Example: vercel --prod"
+          echo "Example: railway up --service web"
+        # env:
+        #   VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        #   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+        #   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+      - name: Run smoke tests
+        run: |
+          echo "TODO: Add smoke tests against staging environment"
+          echo "Example: pnpm --filter api test:e2e --env=staging"
+        env:
+          STAGING_API_URL: https://api-staging.ocsuite.app
+          STAGING_WEB_URL: https://staging.ocsuite.app
+
+      - name: Notify deployment status
+        if: always()
+        run: |
+          echo "TODO: Add notification (Slack, Discord, Email, etc.)"
+          echo "Deployment status: ${{ job.status }}"

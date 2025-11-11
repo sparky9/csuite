@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "incremental": true,
+    "composite": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "paths": {
+      "@ocsuite/db": ["packages/db/src"],
+      "@ocsuite/db/*": ["packages/db/src/*"],
+      "@ocsuite/types": ["packages/types/src"],
+      "@ocsuite/types/*": ["packages/types/src/*"],
+      "@ocsuite/crypto": ["packages/crypto/src"],
+      "@ocsuite/crypto/*": ["packages/crypto/src/*"],
+      "@ocsuite/module-sdk": ["packages/module-sdk/src"],
+      "@ocsuite/module-sdk/*": ["packages/module-sdk/src/*"],
+      "@ocsuite/video-core": ["packages/video-core/src"],
+      "@ocsuite/video-core/*": ["packages/video-core/src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build", ".next"]
+}

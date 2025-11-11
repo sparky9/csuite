@@ -1,0 +1,292 @@
+{
+	"annotations": {
+		"list": [
+			{
+				"builtIn": 1,
+				"datasource": {
+					"type": "grafana",
+					"uid": "grafana"
+				},
+				"enable": true,
+				"hide": false,
+				"iconColor": "rgba(0, 211, 255, 1)",
+				"name": "Annotations & Alerts",
+				"type": "dashboard"
+			}
+		]
+	},
+	"editable": true,
+	"fiscalYearStartMonth": 0,
+	"graphTooltip": 0,
+	"links": [],
+	"liveNow": false,
+	"panels": [
+		{
+			"datasource": {
+				"type": "prometheus",
+				"uid": "${datasource}"
+			},
+			"fieldConfig": {
+				"defaults": {
+					"color": {
+						"mode": "palette-classic"
+					},
+					"mappings": [],
+					"thresholds": {
+						"mode": "absolute",
+						"steps": [
+							{
+								"color": "green",
+								"value": null
+							},
+							{
+								"color": "red",
+								"value": 100
+							}
+						]
+					},
+					"unit": "short"
+				},
+				"overrides": []
+			},
+			"gridPos": {
+				"h": 8,
+				"w": 12,
+				"x": 0,
+				"y": 0
+			},
+			"id": 1,
+			"options": {
+				"legend": {
+					"displayMode": "table",
+					"placement": "right",
+					"values": [
+						"lastNotNull"
+					]
+				},
+				"tooltip": {
+					"mode": "single"
+				}
+			},
+			"targets": [
+				{
+					"expr": "sum by (queue) (ocsuite_queue_jobs_waiting{service=\"ocsuite-api-workers\"})",
+					"legendFormat": "{{queue}}",
+					"refId": "A"
+				}
+			],
+			"title": "Jobs Waiting",
+			"type": "timeseries"
+		},
+		{
+			"datasource": {
+				"type": "prometheus",
+				"uid": "${datasource}"
+			},
+			"fieldConfig": {
+				"defaults": {
+					"color": {
+						"mode": "palette-classic"
+					},
+					"unit": "short"
+				},
+				"overrides": []
+			},
+			"gridPos": {
+				"h": 8,
+				"w": 12,
+				"x": 12,
+				"y": 0
+			},
+			"id": 2,
+			"options": {
+				"legend": {
+					"displayMode": "table",
+					"placement": "right",
+					"values": [
+						"lastNotNull"
+					]
+				},
+				"tooltip": {
+					"mode": "single"
+				}
+			},
+			"targets": [
+				{
+					"expr": "sum by (queue) (ocsuite_queue_jobs_active{service=\"ocsuite-api-workers\"})",
+					"legendFormat": "{{queue}}",
+					"refId": "A"
+				}
+			],
+			"title": "Jobs Active",
+			"type": "timeseries"
+		},
+		{
+			"datasource": {
+				"type": "prometheus",
+				"uid": "${datasource}"
+			},
+			"fieldConfig": {
+				"defaults": {
+					"color": {
+						"mode": "palette-classic"
+					},
+					"unit": "ops"
+				},
+				"overrides": []
+			},
+			"gridPos": {
+				"h": 8,
+				"w": 12,
+				"x": 0,
+				"y": 8
+			},
+			"id": 3,
+			"options": {
+				"legend": {
+					"displayMode": "table",
+					"placement": "right",
+					"values": [
+						"lastNotNull"
+					]
+				},
+				"tooltip": {
+					"mode": "single"
+				}
+			},
+			"targets": [
+				{
+					"expr": "sum by (queue) (rate(ocsuite_queue_jobs_completed_total{service=\"ocsuite-api-workers\"}[5m]))",
+					"legendFormat": "{{queue}}",
+					"refId": "A"
+				}
+			],
+			"title": "Throughput (jobs/min)",
+			"type": "timeseries"
+		},
+		{
+			"datasource": {
+				"type": "prometheus",
+				"uid": "${datasource}"
+			},
+			"fieldConfig": {
+				"defaults": {
+					"color": {
+						"mode": "palette-classic"
+					},
+					"unit": "ms"
+				},
+				"overrides": []
+			},
+			"gridPos": {
+				"h": 8,
+				"w": 12,
+				"x": 12,
+				"y": 8
+			},
+			"id": 4,
+			"options": {
+				"legend": {
+					"displayMode": "table",
+					"placement": "right",
+					"values": [
+						"lastNotNull"
+					]
+				},
+				"tooltip": {
+					"mode": "single"
+				}
+			},
+			"targets": [
+				{
+					"expr": "histogram_quantile(0.95, sum(rate(ocsuite_queue_job_duration_bucket{service=\"ocsuite-api-workers\"}[5m])) by (le, queue))",
+					"legendFormat": "{{queue}}",
+					"refId": "A"
+				}
+			],
+			"title": "Job Duration p95",
+			"type": "timeseries"
+		},
+		{
+			"datasource": {
+				"type": "prometheus",
+				"uid": "${datasource}"
+			},
+			"fieldConfig": {
+				"defaults": {
+					"color": {
+						"mode": "palette-classic"
+					},
+					"unit": "percentunit"
+				},
+				"overrides": []
+			},
+			"gridPos": {
+				"h": 8,
+				"w": 24,
+				"x": 0,
+				"y": 16
+			},
+			"id": 5,
+			"options": {
+				"legend": {
+					"displayMode": "table",
+					"placement": "right",
+					"values": [
+						"lastNotNull"
+					]
+				},
+				"tooltip": {
+					"mode": "single"
+				}
+			},
+			"targets": [
+				{
+					"expr": "sum by (queue) (rate(ocsuite_queue_job_failures_total{service=\"ocsuite-api-workers\"}[5m])) / sum by (queue) (rate(ocsuite_queue_jobs_completed_total{service=\"ocsuite-api-workers\"}[5m]))",
+					"legendFormat": "{{queue}}",
+					"refId": "A"
+				}
+			],
+			"title": "Failure Rate",
+			"type": "timeseries"
+		}
+	],
+	"refresh": "30s",
+	"schemaVersion": 38,
+	"style": "dark",
+	"tags": [
+		"ocsuite",
+		"queue",
+		"phase7"
+	],
+	"templating": {
+		"list": [
+			{
+				"current": {
+					"selected": false,
+					"text": "Default",
+					"value": "default"
+				},
+				"hide": 0,
+				"includeAll": false,
+				"label": "Datasource",
+				"multi": false,
+				"name": "datasource",
+				"options": [],
+				"query": "prometheus",
+				"refresh": 1,
+				"type": "datasource"
+			}
+		]
+	},
+	"time": {
+		"from": "now-6h",
+		"to": "now"
+	},
+	"timepicker": {},
+	"timezone": "",
+	"title": "Queue Operations",
+	"uid": "ocsuite-queue-ops",
+	"version": 1,
+	"weekStart": ""
+}

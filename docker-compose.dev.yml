@@ -1,0 +1,93 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: ocsuite-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ocsuite
+      POSTGRES_PASSWORD: dev_password_change_in_production
+      POSTGRES_DB: ocsuite_dev
+      POSTGRES_INITDB_ARGS: "-E UTF8"
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./packages/db/prisma/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+    command:
+      - "postgres"
+      - "-c"
+      - "shared_preload_libraries=vector"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ocsuite -d ocsuite_dev"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  postgres-vector:
+    image: ankane/pgvector:v0.5.1
+    container_name: ocsuite-postgres-vector
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ocsuite
+      POSTGRES_PASSWORD: dev_password_change_in_production
+      POSTGRES_DB: ocsuite_dev
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_vector_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ocsuite -d ocsuite_dev"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: ocsuite-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 512mb --maxmemory-policy allkeys-lru
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  redis-commander:
+    image: rediscommander/redis-commander:latest
+    container_name: ocsuite-redis-commander
+    restart: unless-stopped
+    environment:
+      REDIS_HOSTS: local:redis:6379
+    ports:
+      - "8081:8081"
+    depends_on:
+      - redis
+
+  adminer:
+    image: adminer:latest
+    container_name: ocsuite-adminer
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres-vector
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres-vector
+
+volumes:
+  postgres_data:
+    name: ocsuite_postgres_data
+  postgres_vector_data:
+    name: ocsuite_postgres_vector_data
+  redis_data:
+    name: ocsuite_redis_data
+
+networks:
+  default:
+    name: ocsuite_network
