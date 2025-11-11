@@ -36,7 +36,7 @@
     "prepare": "node -e \"try{require('husky').install();}catch(e){process.exit(0);}\""
   },
   "devDependencies": {
-    "@types/node": "^20.10.0",
+    "@types/node": "^24.10.0",
     "typescript": "^5.3.3",
     "prettier": "^3.1.1",
     "husky": "^9.0.11"
