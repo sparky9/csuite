@@ -62,7 +62,7 @@
     "pdf-parse": "^1.1.1",
     "pino": "^8.16.2",
     "pino-http": "^8.6.1",
-    "posthog-node": "^4.3.0",
+    "posthog-node": "^5.11.2",
     "rate-limit-redis": "^4.2.0",
     "tsconfig-paths": "^4.2.0",
     "zod": "^3.22.4"
