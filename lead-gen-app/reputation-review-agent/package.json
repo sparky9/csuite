@@ -24,7 +24,7 @@
     "zod-to-json-schema": "^3.23.5"
   },
   "devDependencies": {
-    "@types/node": "^20.12.12",
+    "@types/node": "^24.10.0",
     "@types/pg": "^8.15.5",
     "@types/uuid": "^9.0.7",
     "@typescript-eslint/eslint-plugin": "^8.10.0",
